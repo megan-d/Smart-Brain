@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+/* create display of flex and center class*/
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+/* create particles class for backgroud to make it fit right. use z index to make it below anything else on site. */
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
