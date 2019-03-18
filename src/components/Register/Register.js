@@ -29,7 +29,7 @@ class Register extends React.Component {
     //create Register event to use state to fetch
     onSubmitSignIn = () => {
         //send login information to server with fetch. by default it's a get request but we want to do post in this case.
-        fetch('http://localhost:3000/register', {
+        fetch('https://nameless-peak-68055.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

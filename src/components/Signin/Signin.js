@@ -22,7 +22,7 @@ class Signin extends React.Component {
     //create onSubmit signin event to use state to fetch
     onSubmitSignIn = () => {
         //send login information to server with fetch. by default it's a get request but we want to do post in this case.
-        fetch('http://localhost:3000/signin', {
+        fetch('https://nameless-peak-68055.herokuapp.com/signin', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

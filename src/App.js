@@ -93,7 +93,8 @@ class App extends Component {
   onButtonSubmit = () => {
     //set state of imageUrl to whatever is in input
     this.setState({imageUrl: this.state.input});
-      fetch('http://localhost:3000/imageurl', {
+      //copy endpoint Heroku gave us and leave ending of imageurl
+      fetch('https://nameless-peak-68055.herokuapp.com/imageurl', {
           method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -104,7 +105,7 @@ class App extends Component {
       //take the returned object from calculateFaceLocation and put it into displayFaceBox
       .then(response => {
         if(response) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://nameless-peak-68055.herokuapp.com:3000/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
