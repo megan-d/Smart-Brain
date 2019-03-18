@@ -105,7 +105,7 @@ class App extends Component {
       //take the returned object from calculateFaceLocation and put it into displayFaceBox
       .then(response => {
         if(response) {
-          fetch('https://nameless-peak-68055.herokuapp.com:3000/image', {
+          fetch('https://nameless-peak-68055.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
